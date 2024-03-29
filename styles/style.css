@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#connexion {
+  height: 100vh;
+  background-color: #f2e6c0;
+  color: #5d4f44;
+  font-family: "Roboto";
+  font-weight: 400;
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
+  padding: 0 25px;
+  user-select: none;
+}
+#connexion header .top {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Noto Serif";
+}
+#connexion header .top .content {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+#connexion header .top .content h1 {
+  color: #b62630;
+}
+#connexion header .top .logo {
+  height: 100px;
+  width: 100px;
+}
+#connexion header .bottom {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  color: #c29a7e;
+}
+#connexion main {
+  padding: 10px 0;
+}
+#connexion form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#connexion form > div {
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c29a7e;
+  border-radius: 15px;
+  padding: 0 15px;
+  transition: border 0.25s ease-in-out;
+}
+#connexion form > div i {
+  margin-right: 15px;
+  font-size: 1.25rem;
+  color: #c29a7e;
+  transition: color 0.25s ease-in-out;
+}
+#connexion form > div i.fa-eye,
+#connexion form > div i.fa-eye-slash {
+  margin: 0;
+}
+#connexion form > div input[type=text],
+#connexion form > div input[type=email],
+#connexion form > div input[type=password] {
+  appearance: none;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: #c29a7e;
+  font-size: 1.2rem;
+  font-weight: normal;
+  transition: color 0.25s ease-in-out;
+}
+#connexion form > div input[type=text]::placeholder,
+#connexion form > div input[type=email]::placeholder,
+#connexion form > div input[type=password]::placeholder {
+  color: #c29a7e;
+  font-size: 1rem;
+  font-weight: normal;
+  transition: color 0.25s ease-in-out;
+}
+#connexion form > div input[type=submit] {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+  background-color: #b62630;
+  color: #f2e6c0;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+#connexion form > div.div-active {
+  border: 1px solid #b62630 !important;
+}
+#connexion form > div.div-active input {
+  color: #b62630;
+}
+#connexion form > div.div-active input::placeholder {
+  color: #b62630;
+}
+#connexion form > div.div-active i {
+  color: #b62630;
+}
+#connexion form > div:nth-child(5) {
+  border: none;
+  padding: 0;
+}
+#connexion form > div:nth-child(5) div {
+  margin-right: 15px;
+}
+#connexion form > div:nth-child(5) p {
+  font-size: 0.75rem;
+}
+#connexion form > div:last-child {
+  padding: 0;
+  border: none;
+}
+#connexion form #divCheckbox {
+  position: relative;
+  height: 20px;
+  aspect-ratio: 1/1;
+}
+#connexion form #divCheckbox #mention {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #c29a7e;
+  border-radius: 5px;
+  margin: 0;
+  z-index: 1;
+  transition: border 0.25s ease-in-out;
+}
+#connexion form #divCheckbox #mention:checked {
+  border: 2px solid rgb(38, 153, 182);
+}
+#connexion form #divCheckbox #mention:checked + i {
+  color: rgb(38, 153, 182);
+}
+#connexion form #divCheckbox i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.75);
+  margin-right: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+#connexion footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#connexion footer p {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 0.75rem;
+}
+#connexion a {
+  color: rgb(38, 153, 182);
+}
+
+/*# sourceMappingURL=style.css.map */
